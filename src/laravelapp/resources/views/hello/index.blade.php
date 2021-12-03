@@ -20,7 +20,12 @@
 
 <body>
 	<h1>Blade/Index</h1>
-	<p>{{$msg}}</p>
+	<p>{{ $msg }}</p>
+	<form action="/hello" method="post">
+		{{ csrf_field() }}
+		<input type="text" name="msg">
+		<input type="submit">
+	</form>
 </body>
 
 </html>
