@@ -13,6 +13,8 @@
 
 use App\Http\Middleware\HelloMiddleware;
 use App\Http\Controllers\HelloController;
+use App\Http\Controllers\PersonController;
+use App\Person;
 
 Route::get('/', function () {
     return view('welcome');
@@ -29,3 +31,5 @@ Route::post('hello/del', 'HelloController@remove');
 Route::get('hello/show', 'HelloController@show');
 
 Route::get('person', 'PersonController@index');
+Route::get('person/find', 'PersonController@find');
+Route::post('person/find', 'PersonController@search');
