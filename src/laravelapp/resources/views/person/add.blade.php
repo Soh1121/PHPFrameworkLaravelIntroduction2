@@ -8,7 +8,7 @@
 @endsection
 
 @section('content')
-@if (count($eerors) > 0)
+@if (count($errors) > 0)
 <div>
 	<ul>
 		@foreach ($errors->all() as $error)
