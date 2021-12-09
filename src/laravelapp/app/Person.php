@@ -16,11 +16,11 @@ class Person extends Model
         'age' => 'integer|min:0|max:150'
     );
 
-    protected static function boot()
-    {
-        parent::boot();
-        static::addGlobalScope(new ScopePerson);
-    }
+    // protected static function boot()
+    // {
+    //     parent::boot();
+    //     static::addGlobalScope(new ScopePerson);
+    // }
 
     public function getData()
     {
